@@ -1,6 +1,8 @@
 <?php
 	session_start();
 
+	print_r($_SERVER);
+
 	$dbe = 'mysql:host=' . $_SERVER['DB1_HOST'] . ';port=' . $_SERVER['DB1_PORT'] . ';dbname=' . $_SERVER['DB1_NAME'];
 
 	echo $dbe;

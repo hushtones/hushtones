@@ -28,37 +28,38 @@
 		<div class="container" style="margin-top:100px">
 			<div class="row">
 				<div class="col-sm-12">
-					<div class="col-sm-3">
+					<div class="col-md-3">
 						<center>
-							<img class="style" src="images/schedule.png" alt="250x250" height="250px" width="250px" title="Schedule">
+							<img class="style img-responsive" src="images/schedule.png" alt="250x250"  title="Schedule">
 							<h4>Schedule</h4>
+						</center>
+						<blockquote>
+							<p>Provides an interface to schedule when a user wants to activate the saved settings.
+								</p>
+						</blockquote>
+					</div>
+					<div class="col-md-3">
+						<center>
+							<img class="style img-responsive" src="images/location.png" alt="250x250" title="Location">
+							<h4>Location</h4>
 						</center>
 						<blockquote>
 							<p>Provides a map that allows the user to choose a location to setup phone's ringer and changes the tones 
 							setting when the user arrive at the location's premises.</p>
 						</blockquote>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-md-3">
 						<center>
-							<img class="style" src="images/location.png" alt="250x250" height="250px" width="250px" title="Location">
-							<h4>Location</h4>
-						</center>
-						<blockquote>
-							<p>Provides an interface to schedule when a user wants to activate the saved settings.</p>
-						</blockquote>
-					</div>
-					<div class="col-sm-3">
-						<center>
-							<img class="style" src="images/activity.png" alt="250x250" height="250px" width="250px" title="Activity">
+							<img class="style img-responsive" src="images/activity.png" alt="250x250" title="Activity">
 							<h4>Activity</h4>
 						</center>
 						<blockquote>
 							<p>Provide users the means to set ringer settings corresponding to different activities.</p>
 						</blockquote>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-md-3">
 						<center>
-							<img class="style" src="images/background.png" alt="250x250" height="250px" width="250px" title="Background">
+							<img class="style img-responsive" src="images/background.png" alt="250x250" title="Background">
 							<h4>Background</h4>
 						</center>
 						<blockquote>

@@ -1,3 +1,38 @@
+<?php
+	session_start();
+
+	function db_connect(){ //database connection
+		if(isset($_SERVER['APP_NAME'])) {
+			return new PDO('mysql://host=' . $_SERVER['DB1_HOST'] . 'port=' . $_SERVER['DB1_PORT'] . ';dbname=' . $_SERVER['DB1_NAME'],
+				$_SERVER['DB1_USER'], $_SERVER['DB1_PASS']);
+		}
+		return new PDO('mysql://host=localhost;dbname=hushtones_db','root','');
+	}
+
+	function registration($name, $email){//inserting a data to table author
+		$sql = "INSERT INTO registration(name, email)
+				VALUES(?,?)";
+		$db = db_connect();
+		$stmt = $db->prepare($sql);
+		$stmt->execute(array($name, $email));
+		$db = null;
+	}
+
+	if (isset($_POST['submit'])) {
+		$name = trim($_POST['name']);
+		$email = $_POST['email'];
+
+
+		if(empty($email)){
+			echo"<script>alert('Fill up email.');</script>";
+		} else {
+			registration($name, $email);
+			echo"<script>alert('Successfully registered!');</script>";
+		}
+	}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -86,9 +121,9 @@
 					</div>
 					<div class="modal-body">
 						<form method="POST">
-							<input class="form-control" type="text" name="name" placeholder="Name">
+							<input class="form-control" type="text" name="name" placeholder="Name" required autofocus>
 							<br>
-							<input class="form-control" type="email" name="email" placeholder="Email">
+							<input class="form-control" type="email" name="email" placeholder="Email" required>
 						</form>
 					</div>
 					<div class="modal-footer">
@@ -99,9 +134,6 @@
 			</div>
 		</div>
 
-		<?php
-			print_r($_SERVER);
-		?>
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="js/jquery-1.11.0.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->

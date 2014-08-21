@@ -65,7 +65,7 @@
 					<div class="col-md-3">
 						<center>
 							<img class="style img-responsive" src="images/schedule.png" alt="250x250"  title="Schedule">
-							<h4>Schedule</h4>
+							<h3>Schedule</h3>
 						</center>
 						<blockquote>
 							<p>Provides an interface to schedule when a user wants to activate the saved settings.
@@ -75,7 +75,7 @@
 					<div class="col-md-3">
 						<center>
 							<img class="style img-responsive" src="images/location.png" alt="250x250" title="Location">
-							<h4>Location</h4>
+							<h3>Location</h3>
 						</center>	
 						<blockquote>
 							<p>Provides a map that allows the user to choose a location to setup phone's ringer and changes the tones 
@@ -85,7 +85,7 @@
 					<div class="col-md-3">
 						<center>
 							<img class="style img-responsive" src="images/activity.png" alt="250x250" title="Activity">
-							<h4>Activity</h4>
+							<h3>Activity</h3>
 						</center>
 						<blockquote>
 							<p>Provide users the means to set ringer settings corresponding to different activities.</p>
@@ -94,7 +94,7 @@
 					<div class="col-md-3">
 						<center>
 							<img class="style img-responsive" src="images/background.png" alt="250x250" title="Background">
-							<h4>Background</h4>
+							<h3>Background</h3>
 						</center>
 						<blockquote>
 							<p>Automatically adjusts tone settings according to the user's background noise.</p>
@@ -117,7 +117,7 @@
 					<div class="modal-content">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							<h4 class="modal-title" id="myModalLabel">Sign up</h4>
+							<h3 class="modal-title" id="myModalLabel">Sign up</h3>
 						</div>
 						<div class="modal-body">
 								<input class="form-control" type="text" name="name" placeholder="Name" required autofocus>

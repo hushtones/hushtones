@@ -22,7 +22,6 @@
 		$name = trim($_POST['name']);
 		$email = $_POST['email'];
 
-
 		if(empty($email)){
 			echo"<script>alert('Fill up email.');</script>";
 		} else {
@@ -113,25 +112,25 @@
 
 		<!-- Modal -->
 		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						<h4 class="modal-title" id="myModalLabel">Sign up</h4>
-					</div>
-					<div class="modal-body">
-						<form method="POST">
-							<input class="form-control" type="text" name="name" placeholder="Name" required autofocus>
-							<br>
-							<input class="form-control" type="email" name="email" placeholder="Email" required>
-						</form>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-hushtones">Submit</button>
+			<form method="POST">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">Sign up</h4>
+						</div>
+						<div class="modal-body">
+								<input class="form-control" type="text" name="name" placeholder="Name" required autofocus>
+								<br>
+								<input class="form-control" type="email" name="email" placeholder="Email" required>
+						</div>
+						<div class="modal-footer">
+							<div class="btn btn-default" data-dismiss="modal">Close</div>
+							<button type="submit" class="btn btn-hushtones" name="submit">Submit</button>
+						</div>
 					</div>
 				</div>
-			</div>
+			</form>
 		</div>
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

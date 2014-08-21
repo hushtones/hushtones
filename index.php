@@ -42,7 +42,7 @@
 						<center>
 							<img class="style img-responsive" src="images/location.png" alt="250x250" title="Location">
 							<h4>Location</h4>
-						</center>
+						</center>	
 						<blockquote>
 							<p>Provides a map that allows the user to choose a location to setup phone's ringer and changes the tones 
 							setting when the user arrive at the location's premises.</p>
@@ -99,6 +99,9 @@
 			</div>
 		</div>
 
+		<?php
+			print_r($_SERVER);
+		?>
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="js/jquery-1.11.0.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->

@@ -1,15 +1,9 @@
 <?php
 	session_start();
 
-	print_r($_SERVER);
-
-	$dbe = 'mysql:host=' . $_SERVER['DB1_HOST'] . ';port=' . $_SERVER['DB1_PORT'] . ';dbname=' . $_SERVER['DB1_NAME'];
-
-	echo $dbe;
-
 	function db_connect(){ //database connection
 		if(isset($_SERVER['APP_NAME'])) {
-			return new PDO($dbe,
+			return new PDO('mysql:host=' . $_SERVER['DB1_HOST'] . ';port=' . $_SERVER['DB1_PORT'] . ';dbname=' . $_SERVER['DB1_NAME'],
 				$_SERVER['DB1_USER'], $_SERVER['DB1_PASS']);
 		}
 		return new PDO('mysql://host=localhost;dbname=hushtones_db','root','');

@@ -99,6 +99,11 @@
 			</div>
 		</div>
 
+		<div class="container content-details text-center">
+			Hushtones Premium features a Web Interface for easier setting management and synchronization for a small fee.<br>
+			Interested? Sign Up to recieve the latest updates.
+		</div>
+
 		<div class="container" align="center">
 			<div class="row">
 				<button class="btn btn-lg btn-hushtones"  data-toggle="modal" data-target="#myModal">Sign up</button>

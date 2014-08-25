@@ -3,16 +3,36 @@
 	border-radius: 25px;*/
 }
 
+@font-face {
+  font-family: '20th Century Font';
+  src: url('http://www.fontsaddict.com/fontface/20th-century-font.ttf');
+}
+	
+body{
+	font-family:  '20th Century Font';
+}			
+
 blockquote {
 	border-left:none;
 	
 }
 
 h3 {
+	font-family:  '20th Century Font';
 	font-weight:bold;}
 
 blockquote p{
 	font-size:1.3em;
 	font-weight:lighter;
 	text-align: justify;
+	letter-spacing: 1px;
+}
+
+.content-details{
+	font-size:1.4em;
+	letter-spacing: 1px;
+	margin-bottom:10px;
+	background-color: #9934cc;
+	color:#fff;
+	padding:5px;
 }

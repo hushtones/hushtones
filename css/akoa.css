@@ -18,7 +18,7 @@ blockquote {
 }
 
 h3 {
-	font-family:  '20th Century Font';
+	font-family:  '20th Century Font' !important;
 	font-weight:bold;}
 
 blockquote p{
@@ -41,7 +41,7 @@ blockquote p{
 }
 
 .btn-color-override{
-	font-family:  '20th Century Font';
+	font-family:  '20th Century Font' !important;
 	background-color:green;
 }
 
@@ -53,4 +53,9 @@ blockquote p{
 .col-md-3:hover .img-features{
 	opacity: 1;
     filter: alpha(opacity=1);
+    cursor: pointer;
+}
+
+.col-md-3:hover{
+	cursor: pointer;
 }

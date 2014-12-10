@@ -59,7 +59,7 @@
 
 		<div class="container">
 			<div class="row title text-center">
-				<img src="http://hushtones.gopagoda.com/images/title.png"/>
+				<img src="images/title.PNG"/>
 			</div>
 			<div class="row tagline text-center">
 				"The right tone settings at the right place and at the right time."

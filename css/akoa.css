@@ -5,11 +5,11 @@
 
 @font-face {
   font-family: '20th Century Font';
-  src: url('http://www.fontsaddict.com/fontface/20th-century-font.ttf');
+  src: url('../fonts/20.ttf');
 }
 	
 body{
-	font-family:  '20th Century Font';
+	font-family: 'calibri';
 }			
 
 blockquote {
@@ -31,8 +31,26 @@ blockquote p{
 .content-details{
 	font-size:1.4em;
 	letter-spacing: 1px;
+	margin-top:2%;
 	margin-bottom:10px;
+	margin-left:35%;
+	margin-right:35%;
 	background-color: #9934cc;
 	color:#fff;
 	padding:5px;
+}
+
+.btn-color-override{
+	font-family:  '20th Century Font';
+	background-color:green;
+}
+
+.img-features{
+	opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+
+.col-md-3:hover .img-features{
+	opacity: 1;
+    filter: alpha(opacity=1);
 }

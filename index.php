@@ -1,6 +1,8 @@
 <?php
 	session_start();
 
+	$err = "";
+
 	function db_connect(){ //database connection
 		if(isset($_SERVER['APP_NAME'])) {
 			return new PDO('mysql:host=' . $_SERVER['DB1_HOST'] . ';port=' . $_SERVER['DB1_PORT'] . ';dbname=' . $_SERVER['DB1_NAME'],
@@ -20,14 +22,15 @@
 
 	if (isset($_POST['submit'])) {
 		$name = trim($_POST['name']);
-		$email = $_POST['email'];
-
-		if(empty($email)){
-			echo"<script>alert('Fill up email.');</script>";
-		} else {
+		$email = trim($_POST['email']);
+		
+		if(!empty($name) && !empty($email) && preg_match('/^\pL+$/u', $name) && filter_var($email, FILTER_VALIDATE_EMAIL) && preg_match('/@.+\./', $email)){
 			registration($name, $email);
-			echo"<script>alert('Successfully registered!');</script>";
+			echo "<script>alert('Successfully registered!');</script>";
+		}else{
+			echo "<script>alert('Please double check inputs and try again.');</script>";
 		}
+
 	}
 
 ?>
@@ -59,7 +62,7 @@
 				<div class="col-sm-12">
 					<div class="col-md-3">
 						<center>
-							<img class="style img-responsive" src="images/schedule.png" alt="250x250"  title="Schedule">
+							<img class="style img-responsive img-features" src="images/scheduleO.png" alt="250x250"  title="Schedule">
 							<h3>Schedule</h3>
 						</center>
 						<blockquote>
@@ -69,7 +72,7 @@
 					</div>
 					<div class="col-md-3">
 						<center>
-							<img class="style img-responsive" src="images/location.png" alt="250x250" title="Location">
+							<img class="style img-responsive img-features" src="images/locationO.png" alt="250x250" title="Location">
 							<h3>Location</h3>
 						</center>	
 						<blockquote>
@@ -79,7 +82,7 @@
 					</div>
 					<div class="col-md-3">
 						<center>
-							<img class="style img-responsive" src="images/activity.png" alt="250x250" title="Activity">
+							<img class="style img-responsive img-features" src="images/activityO.png" alt="250x250" title="Activity">
 							<h3>Activity</h3>
 						</center>
 						<blockquote>
@@ -88,7 +91,7 @@
 					</div>
 					<div class="col-md-3">
 						<center>
-							<img class="style img-responsive" src="images/background.png" alt="250x250" title="Background">
+							<img class="style img-responsive img-features" src="images/backgroundO.png" alt="250x250" title="Background">
 							<h3>Background</h3>
 						</center>
 						<blockquote>
@@ -100,13 +103,12 @@
 		</div>
 
 		<div class="container content-details text-center">
-			Hushtones Premium features a Web Interface for easier setting management and synchronization for a small fee.<br>
-			Interested? Sign Up to recieve the latest updates.
+			<button class="btn btn-lg btn-hushtones btn-color-override btn-success"  data-toggle="modal" data-target="#myModal">Sign up</button> now for free early access.
 		</div>
 
 		<div class="container" align="center">
 			<div class="row">
-				<button class="btn btn-lg btn-hushtones"  data-toggle="modal" data-target="#myModal">Sign up</button>
+				
 			</div>
 		</div>
 

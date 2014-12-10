@@ -9,7 +9,7 @@
 }
 	
 body{
-	font-family: 'calibri';
+	font-family: tahoma;
 }			
 
 blockquote {
@@ -22,30 +22,46 @@ h3 {
 	font-weight:bold;}
 
 blockquote p{
-	font-size:1.3em;
+	font-size:1em;
 	font-weight:lighter;
-	text-align: justify;
+	text-align: ;
 	letter-spacing: 1px;
+}
+
+.title{
+	margin-top:.5em;
+	font-family:  '20th Century Font' !important;
+	font-size:6em;
+	padding-bottom:0;
+	
+}
+
+.tagline{
+	font-family:  Geneva, Tahoma !important;
+	margin-top:0;
+	font-size:1.6em;
+	line-height: 1;
 }
 
 .content-details{
 	font-size:1.4em;
 	letter-spacing: 1px;
-	margin-top:2%;
+	margin-top:1%;
 	margin-bottom:10px;
-	margin-left:35%;
-	margin-right:35%;
 	background-color: #9934cc;
 	color:#fff;
 	padding:5px;
+	display:inline-block;
+	margin-right:4em;
 }
 
 .btn-color-override{
 	font-family:  '20th Century Font' !important;
-	background-color:green;
 }
 
 .img-features{
+	margin:2em;
+
 	opacity: 0.4;
     filter: alpha(opacity=40);
 }
@@ -58,4 +74,15 @@ blockquote p{
 
 .col-md-3:hover{
 	cursor: pointer;
+}
+
+.playstore{
+	/*float:right;
+	margin-top:-4.5em;
+	margin-right: 8em;*/
+}
+
+.img-playstore{
+	height:54px;
+
 }

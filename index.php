@@ -57,7 +57,13 @@
 			</div>
 		</div>
 
-		<div class="container" style="margin-top:100px">
+		<div class="container">
+			<div class="row title text-center">
+				<img src="images/title.png"/>
+			</div>
+			<div class="row tagline text-center">
+				"The right tone settings at the right place and at the right time."
+			</div>
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="col-md-3">
@@ -76,8 +82,7 @@
 							<h3>Location</h3>
 						</center>	
 						<blockquote>
-							<p>Provides a map that allows the user to choose a location to setup phone's ringer and changes the tones 
-							setting when the user arrive at the location's premises.</p>
+							<p>Allows users to set up the phone's ringer according to location.</p>
 						</blockquote>
 					</div>
 					<div class="col-md-3">
@@ -101,11 +106,12 @@
 				</div>
 			</div>
 		</div>
-
-		<div class="container content-details text-center">
+		<div class=" text-center">
+		<div class="content-details text-center">
 			<button class="btn btn-lg btn-hushtones btn-color-override btn-success"  data-toggle="modal" data-target="#myModal">Sign up</button> now for free early access.
 		</div>
-
+		<span class="playstore"><img class="img-playstore" src="images/playstore.png"/></span>
+		</div>
 		<div class="container" align="center">
 			<div class="row">
 				

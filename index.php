@@ -24,7 +24,7 @@
 		$name = trim($_POST['name']);
 		$email = trim($_POST['email']);
 		
-		if(!empty($name) && !empty($email) && preg_match('/^\pL+$/u', $name) && filter_var($email, FILTER_VALIDATE_EMAIL) && preg_match('/@.+\./', $email)){
+		if(!empty($name) && !empty($email) && preg_match('/^[a-zA-Z][a-zA-Z ]*$/', $name) && filter_var($email, FILTER_VALIDATE_EMAIL) && preg_match('/@.+\./', $email)){
 			registration($name, $email);
 			echo "<script>alert('Successfully registered!');</script>";
 		}else{
